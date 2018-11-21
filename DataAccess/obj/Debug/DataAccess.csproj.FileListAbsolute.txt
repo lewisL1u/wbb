@@ -1,0 +1,14 @@
+E:\code\wbb\DataAccess\bin\Debug\DataAccess.dll
+E:\code\wbb\DataAccess\bin\Debug\DataAccess.pdb
+E:\code\wbb\wbb\bin\Debug\DataAccess.XML
+E:\code\wbb\wbb\bin\Debug\DataAccess.dll
+E:\code\wbb\wbb\bin\Debug\DataAccess.pdb
+E:\code\wbb\DataAccess\obj\Debug\DataAccess.dll
+E:\code\wbb\DataAccess\obj\Debug\DataAccess.pdb
+E:\code\wbb\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
+E:\c#\xunibi\wbb\wbb\bin\Debug\DataAccess.XML
+E:\c#\xunibi\wbb\wbb\bin\Debug\DataAccess.dll
+E:\c#\xunibi\wbb\wbb\bin\Debug\DataAccess.pdb
+E:\c#\xunibi\wbb\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
+E:\c#\xunibi\wbb\DataAccess\obj\Debug\DataAccess.dll
+E:\c#\xunibi\wbb\DataAccess\obj\Debug\DataAccess.pdb

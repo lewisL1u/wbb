@@ -1,0 +1,17 @@
+E:\code\wbb\BaseCoinApi\obj\Debug\BaseCoinApis.csprojResolveAssemblyReference.cache
+E:\code\wbb\BaseCoinApi\bin\Debug\BaseCoinApi.dll
+E:\code\wbb\BaseCoinApi\bin\Debug\BaseCoinApi.pdb
+E:\code\wbb\BaseCoinApi\bin\Debug\DataAccess.dll
+E:\code\wbb\BaseCoinApi\bin\Debug\Newtonsoft.Json.dll
+E:\code\wbb\BaseCoinApi\bin\Debug\DataAccess.pdb
+E:\code\wbb\BaseCoinApi\bin\Debug\DataAccess.xml
+E:\code\wbb\BaseCoinApi\bin\Debug\Newtonsoft.Json.xml
+E:\code\wbb\BaseCoinApi\obj\Debug\BaseCoinApi.dll
+E:\code\wbb\BaseCoinApi\obj\Debug\BaseCoinApi.pdb
+E:\code\wbb\wbb\bin\Debug\BaseCoinApi.dll
+E:\code\wbb\wbb\bin\Debug\BaseCoinApi.pdb
+E:\c#\xunibi\wbb\wbb\bin\Debug\BaseCoinApi.dll
+E:\c#\xunibi\wbb\wbb\bin\Debug\BaseCoinApi.pdb
+E:\c#\xunibi\wbb\BaseCoinApi\obj\Debug\BaseCoinApis.csprojResolveAssemblyReference.cache
+E:\c#\xunibi\wbb\BaseCoinApi\obj\Debug\BaseCoinApi.dll
+E:\c#\xunibi\wbb\BaseCoinApi\obj\Debug\BaseCoinApi.pdb

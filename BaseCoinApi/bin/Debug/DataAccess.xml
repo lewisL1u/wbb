@@ -1,0 +1,211 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DataAccess</name>
+    </assembly>
+    <members>
+        <member name="T:DataAccess.AccessHelper">
+            <summary>
+            AcceHelper 的摘要说明
+            </summary>
+        </member>
+        <member name="M:DataAccess.AccessHelper.ExecuteNonQuery(System.String,System.String,System.Data.OleDb.OleDbParameter[])">
+            <summary>
+             给定连接的数据库用假设参数执行一个sql命令（不返回数据集）
+            </summary>
+            <param name="connectionString">一个有效的连接字符串</param>
+            <param name="commandText">存储过程名称或者sql命令语句</param>
+            <param name="commandParameters">执行命令所用参数的集合</param>
+            <returns>执行命令所影响的行数</returns>
+        </member>
+        <member name="M:DataAccess.AccessHelper.ExecuteNonQuery(System.Data.OleDb.OleDbConnection,System.String,System.Data.OleDb.OleDbParameter[])">
+             <summary>
+             用现有的数据库连接执行一个sql命令（不返回数据集）
+             </summary>
+             <remarks>
+            举例:  
+              int result = ExecuteNonQuery(connString, "PublishOrders", new OleDbParameter("@prodid", 24));
+             </remarks>
+             <param name="conn">一个现有的数据库连接</param>
+             <param name="commandText">存储过程名称或者sql命令语句</param>
+             <param name="commandParameters">执行命令所用参数的集合</param>
+             <returns>执行命令所影响的行数</returns>
+        </member>
+        <member name="M:DataAccess.AccessHelper.ExecuteNonQuery(System.Data.OleDb.OleDbTransaction,System.String,System.Data.OleDb.OleDbParameter[])">
+             <summary>
+            使用现有的SQL事务执行一个sql命令（不返回数据集）
+             </summary>
+             <remarks>
+            举例:  
+              int result = ExecuteNonQuery(trans, "PublishOrders", new OleDbParameter("@prodid", 24));
+             </remarks>
+             <param name="trans">一个现有的事务</param>
+             <param name="commandText">存储过程名称或者sql命令语句</param>
+             <param name="commandParameters">执行命令所用参数的集合</param>
+             <returns>执行命令所影响的行数</returns>
+        </member>
+        <member name="M:DataAccess.AccessHelper.ExecuteReader(System.String,System.String,System.Data.OleDb.OleDbParameter[])">
+            <summary>
+            用执行的数据库连接执行一个返回数据集的sql命令
+            </summary>
+            <remarks>
+            举例:  
+             OleDbDataReader r = ExecuteReader(connString, "PublishOrders", new OleDbParameter("@prodid", 24));
+            </remarks>
+            <param name="connectionString">一个有效的连接字符串</param>
+            <param name="commandText">存储过程名称或者sql命令语句</param>
+            <param name="commandParameters">执行命令所用参数的集合</param>
+            <returns>包含结果的读取器</returns>
+        </member>
+        <member name="M:DataAccess.AccessHelper.ExecuteDataSet(System.String,System.String,System.Data.OleDb.OleDbParameter[])">
+            <summary>
+            返回一个DataSet数据集
+            </summary>
+            <param name="connectionString">一个有效的连接字符串</param>
+            <param name="cmdText">存储过程名称或者sql命令语句</param>
+            <param name="commandParameters">执行命令所用参数的集合</param>
+            <returns>包含结果的数据集</returns>
+        </member>
+        <member name="M:DataAccess.AccessHelper.ExecuteScalar(System.String,System.String,System.Data.OleDb.OleDbParameter[])">
+             <summary>
+             用指定的数据库连接字符串执行一个命令并返回一个数据集的第一列
+             </summary>
+             <remarks>
+            例如:  
+              Object obj = ExecuteScalar(connString, "PublishOrders", new OleDbParameter("@prodid", 24));
+             </remarks>
+            <param name="connectionString">一个有效的连接字符串</param>
+             <param name="commandText">存储过程名称或者sql命令语句</param>
+             <param name="commandParameters">执行命令所用参数的集合</param>
+             <returns>用 Convert.To{Type}把类型转换为想要的 </returns>
+        </member>
+        <member name="M:DataAccess.AccessHelper.ExecuteScalar(System.Data.OleDb.OleDbConnection,System.String,System.Data.OleDb.OleDbParameter[])">
+            <summary>
+            用指定的数据库连接执行一个命令并返回一个数据集的第一列
+            </summary>
+            <remarks>
+            例如:  
+             Object obj = ExecuteScalar(connString, "PublishOrders", new OleDbParameter("@prodid", 24));
+            </remarks>
+            <param name="conn">一个存在的数据库连接</param>
+            <param name="commandText">存储过程名称或者sql命令语句</param>
+            <param name="commandParameters">执行命令所用参数的集合</param>
+            <returns>用 Convert.To{Type}把类型转换为想要的 </returns>
+        </member>
+        <member name="M:DataAccess.AccessHelper.CacheParameters(System.String,System.Data.OleDb.OleDbParameter[])">
+            <summary>
+            将参数集合添加到缓存
+            </summary>
+            <param name="cacheKey">添加到缓存的变量</param>
+            <param name="cmdParms">一个将要添加到缓存的sql参数集合</param>
+        </member>
+        <member name="M:DataAccess.AccessHelper.GetCachedParameters(System.String)">
+            <summary>
+            找回缓存参数集合
+            </summary>
+            <param name="cacheKey">用于找回参数的关键字</param>
+            <returns>缓存的参数集合</returns>
+        </member>
+        <member name="M:DataAccess.AccessHelper.PrepareCommand(System.Data.OleDb.OleDbCommand,System.Data.OleDb.OleDbConnection,System.Data.OleDb.OleDbTransaction,System.String,System.Data.OleDb.OleDbParameter[])">
+            <summary>
+            准备执行一个命令
+            </summary>
+            <param name="cmd">sql命令</param>
+            <param name="conn">Sql连接</param>
+            <param name="trans">Sql事务</param>
+            <param name="cmdText">命令文本,例如：Select * from Products</param>
+            <param name="cmdParms">执行命令的参数</param>
+        </member>
+        <member name="T:DataAccess.HttpHelper">
+            <summary>
+            Http访问帮助类
+            </summary>
+        </member>
+        <member name="M:DataAccess.HttpHelper.PostDataGetHtml(System.String,System.String)">
+            <summary>
+            HttpWebRequest 通过Post
+            </summary>
+            <param name="url">URI</param>
+            <param name="postData">post数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:DataAccess.HttpHelper.GetDataGetHtml(System.String)">
+            <summary>
+            HttpWebRequest 通过get
+            </summary>
+            <param name="url">URI</param>
+            <returns></returns>
+        </member>
+        <member name="M:DataAccess.HttpHelper.GetDataGetHtml(System.String,System.String,System.String@)">
+            <summary>
+            HttpWebRequest 通过get
+            </summary>
+            <param name="url">URI</param>
+            <returns></returns>
+        </member>
+        <member name="M:DataAccess.HttpHelper.Upload_Request(System.String,System.String,System.String)">
+            <summary>
+            将本地文件上传到指定的服务器(HttpWebRequest方法)
+            </summary>
+            <param name="address">文件上传到的服务器</param>
+            <param name="fileNamePath">要上传的本地文件（全路径）</param>
+            <param name="saveName">文件上传后的名称</param>
+            <returns>成功返回1，失败返回0</returns> 
+        </member>
+        <member name="M:DataAccess.HttpHelper.Upload_Request(System.String,System.IO.Stream,System.String)">
+            <summary>
+            将本地文件流上传到指定的服务器(HttpWebRequest方法)
+            </summary>
+            <param name="address">文件上传到的服务器</param>
+            <param name="fileStream">要上传的本地文件流</param>
+            <param name="saveName">文件上传后的名称</param>
+            <returns>成功返回1，失败返回0</returns> 
+        </member>
+        <member name="M:DataAccess.HttpHelper.HttpPostData(System.String,System.String,System.String,System.String,System.Collections.Specialized.NameValueCollection,System.Int32)">
+            <summary>
+            将本地文件上传到指定服务器上（HttpWebRequest方法），并传递相应参数
+            </summary>
+            <param name="url">文件上传到的服务器</param>
+            <param name="fileKeyName">类型（此处为文件--file）</param>
+            <param name="filePath">要上传的本地文件（全路径）</param>
+            <param name="filename">文件上传后的名称</param>
+            <param name="stringDict">参数集合</param>
+            <param name="timeOut">请求时效</param>
+            <returns></returns>
+        </member>
+        <member name="M:DataAccess.HttpHelper.HttpDownLoadFiles(System.String,System.String,System.Int32)">
+            <summary>
+            Http下载文件支持断点续传
+            </summary>
+            <param name="uri">下载地址</param>
+            <param name="filefullpath">存放完整路径（含文件名）</param>
+            <param name="size">每次多的大小</param>
+            <returns>下载操作是否成功</returns>
+        </member>
+        <member name="M:DataAccess.HttpHelper.DownLoadFiles(System.String,System.String,System.Int32)">
+            <summary>
+            Http下载文件
+            </summary>
+            <param name="uri">下载地址</param>
+            <param name="filefullpath">存放完整路径（含文件名）</param>
+            <param name="size">每次多的大小</param>
+            <returns>下载操作是否成功</returns>
+        </member>
+        <member name="T:DataAccess.HttpUtilManager">
+             封装HTTP请求
+             @author xiaoxibo
+            
+        </member>
+        <member name="M:DataAccess.MD5Util.buildMysignV1(System.Collections.Generic.Dictionary{System.String,System.String},System.String)">
+            生成签名结果
+            
+            @param sArray
+                       要签名的数组
+            @return 签名结果字符串
+        </member>
+        <member name="F:DataAccess.MD5Util.HEX_DIGITS">
+            生成32位大写MD5值
+        </member>
+        <!-- 对于成员“M:DataAccess.StringUtil.createLinkString(System.Collections.Generic.Dictionary{System.String,System.String})”忽略有格式错误的 XML 注释 -->
+    </members>
+</doc>

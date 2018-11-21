@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wbb", "wbb\wbb.csproj", "{601E821F-5534-4225-B3C4-C86B641AF8B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{139ABBD2-C3F0-4049-A653-A653E476119D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entity", "Entity\Entity.csproj", "{C89707E6-D71A-4F6D-80DE-29403D444D53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseCoinApis", "BaseCoinApi\BaseCoinApis.csproj", "{C3F12353-30D3-4FAB-BD53-E5218C3F79C5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{601E821F-5534-4225-B3C4-C86B641AF8B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{601E821F-5534-4225-B3C4-C86B641AF8B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{601E821F-5534-4225-B3C4-C86B641AF8B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{601E821F-5534-4225-B3C4-C86B641AF8B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{139ABBD2-C3F0-4049-A653-A653E476119D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{139ABBD2-C3F0-4049-A653-A653E476119D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{139ABBD2-C3F0-4049-A653-A653E476119D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{139ABBD2-C3F0-4049-A653-A653E476119D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C89707E6-D71A-4F6D-80DE-29403D444D53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C89707E6-D71A-4F6D-80DE-29403D444D53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C89707E6-D71A-4F6D-80DE-29403D444D53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C89707E6-D71A-4F6D-80DE-29403D444D53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3F12353-30D3-4FAB-BD53-E5218C3F79C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3F12353-30D3-4FAB-BD53-E5218C3F79C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3F12353-30D3-4FAB-BD53-E5218C3F79C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3F12353-30D3-4FAB-BD53-E5218C3F79C5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

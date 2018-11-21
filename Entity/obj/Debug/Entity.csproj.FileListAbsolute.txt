@@ -1,0 +1,12 @@
+E:\code\wbb\Entity\bin\Debug\Entity.dll
+E:\code\wbb\Entity\bin\Debug\Entity.pdb
+E:\code\wbb\Entity\obj\Debug\Entity.dll
+E:\code\wbb\Entity\obj\Debug\Entity.pdb
+E:\code\wbb\wbb\bin\Debug\Entity.XML
+E:\code\wbb\wbb\bin\Debug\Entity.dll
+E:\code\wbb\wbb\bin\Debug\Entity.pdb
+E:\c#\xunibi\wbb\wbb\bin\Debug\Entity.XML
+E:\c#\xunibi\wbb\wbb\bin\Debug\Entity.dll
+E:\c#\xunibi\wbb\wbb\bin\Debug\Entity.pdb
+E:\c#\xunibi\wbb\Entity\obj\Debug\Entity.dll
+E:\c#\xunibi\wbb\Entity\obj\Debug\Entity.pdb
